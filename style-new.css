@@ -1,0 +1,394 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 Dec, 2019, 1:10:22 PM
+    Author     : SREEJITH
+*/
+
+/*@import "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700";*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+total,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1.5;
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+body {
+    height: 14.8cm;
+    width: 21cm;
+    margin: auto;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px
+}
+
+strong {
+    font-weight: 700
+}
+
+#container {
+    position: relative;
+    margin-right: 1cm;
+    padding: 4%;
+    height: 21cm
+        
+}
+
+#header {
+    height: 80px
+}
+
+#header>#reference {
+    float: right;
+    text-align: left;
+    width: 73%;
+    line-height: 1.2;
+}
+
+#header>#reference h3 {
+    margin: 0
+}
+
+#header>#reference h4 {
+    margin: 0;
+    font-size: 85%;
+    font-weight: 600
+}
+
+#header>#reference p {
+    margin: 0;
+    margin-top: 2%;
+    font-size: 85%
+}
+
+#header>#logo {
+    width: 25%;
+    float: left
+}
+
+#fromto {
+    height: 160px
+}
+
+#fromto>#from,
+#fromto>#to {
+    width: 45%;
+    min-height: 90px;
+    margin-top: 30px;
+    font-size: 85%;
+    padding: 1.5%;
+    line-height: 120%;
+    background: #efefef;
+}
+
+#fromto>#from {
+    float: left;
+    width: 45%;
+    background: #efefef;
+    margin-top: 30px;
+    font-size: 85%;
+    padding: 1.5%
+}
+
+#fromto>#to {
+    float: right;
+    /*border: solid grey 1px*/
+}
+
+#items {
+    margin-top: 5px;
+    font-size: 18px;
+        
+}
+
+#items>p {
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 1%;
+    font-size: 65%
+}
+
+#items>table {
+    width: 100%;
+    font-size: 85%;
+    border: solid grey 1px
+}
+
+#items>table th:first-child {
+    text-align: left
+}
+
+#items>table th {
+    height: 25px;
+    font-weight: 400;
+    padding: 1px 4px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#items>table td {
+    padding: 1px 4px;
+}
+#items>table th:nth-child(1)
+{
+    width: 0.5cm;
+}
+#items>table th:nth-child(2){
+    width: 8cm;
+}
+
+
+#items>table th:nth-child(3) {
+    width: 2cm;
+    text-align: right;
+}
+
+#items>table th:nth-child(4) {
+    width: 1cm;
+}
+#items>table th:nth-child(5) {
+    width: 2cm;
+}
+
+#items>table tr td:not(:first-child) {
+    text-align: left;
+    padding-right: 1%
+}
+
+#items>table tr td:nth-child(3) {
+    text-align: right;
+}
+
+#items table td {
+    border-right: solid grey 1px;
+}
+
+#items table tr td {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 10px;
+}
+
+#items table tr:nth-child(1) {
+    border: solid grey 1px
+}
+
+#items table tr th {
+    border-right: solid grey 1px;
+    padding: 3px
+}
+
+#items table tr:nth-child(2)>td {
+    padding-top: 8px
+}
+
+#summary {
+    height: 170px;
+    margin-top: 30px
+}
+
+#summary #note {
+    float: left
+}
+
+#summary #note h4 {
+    font-size: 10px;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 4px
+}
+
+#summary #note p {
+    font-size: 10px;
+    font-style: italic
+}
+
+#summary #total table {
+    font-size: 85%;
+    width: 260px;
+    float: right
+}
+
+#summary #total table td {
+    padding: 3px 4px;
+    text-align: right;
+}
+
+#summary #total table tr td:last-child {
+    text-align: right;
+        
+}
+
+#summary #total table tr:nth-child(1) {
+    background: #efefef;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#footer {
+    margin: auto;
+    position: absolute;
+    left: 4%;
+    bottom: -25%;
+    right: 4%;
+    border-top: solid grey 1px
+}
+
+#footer p {
+    margin-top: 1%;
+    font-size: 65%;
+    line-height: 140%;
+    text-align: center
+}
+
+/*EBLIZZ TECHNOLOGY SOLUTION PVT LTD*/
+/*COMPANY NAME SETUP*/
+#header>#reference h1{
+    font-size: 30px;
+}
+
+#header>#reference h3{
+    font-size: 16px;
+}
+
+#header>#reference p{
+    font-size: 12px;
+}
+
+/*heading style*/
+.heading_style{
+    font-size: 20px;
+}
+
+.heading_style p{
+    line-height: 1.3em;
+}
+
+#summary #total table td{
+    font-size: 17px;
+}
